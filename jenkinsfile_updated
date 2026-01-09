@@ -34,7 +34,7 @@ pipeline {
             }
         }
         
-        stage('SONARQUBE ANALYSIS') {
+        stage('SONARQUBE ANALYSISy') {
             steps {
                 withSonarQubeEnv('sonar') {
                     sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Gaming -Dsonar.projectKey=Gaming\
